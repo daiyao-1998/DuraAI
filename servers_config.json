@@ -1,0 +1,32 @@
+{
+    "mcpServers": {
+        "lark-mcp": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@larksuiteoapi/lark-mcp",
+                "mcp",
+                "-a",
+                "cli_a555a36dc0ba900e",
+                "-s",
+                "5RNoheo5lucB4S2AqxjU0gayMX3WGTa0",
+                "--oauth",
+                "-t",
+                "drive.v1.permissionMember.create,docx.v1.documentBlockChildren.create,docx.v1.document.create,docx.v1.documentBlock.patch,contact.v3.user.batchGetId,im.v1.message.create",
+                "--token-mode",
+                "tenant_access_token"
+            ],
+            "transport": "stdio"
+        },
+        "MCP_UploadImages": {
+            "command": "python",
+            "args": ["MCP_UploadImages.py"],
+            "transport": "stdio"
+        },
+        "MCP_FigGenerator": {
+            "command": "python",
+            "args": ["MCP_FigGenerator.py"],
+            "transport": "stdio"
+        }
+    }
+}
